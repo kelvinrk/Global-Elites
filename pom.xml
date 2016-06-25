@@ -9,6 +9,8 @@
 
     <modules>
         <module>elites-gson</module>
+        <module>elites-algorithms</module>
+        <module>elites-java</module>
     </modules>
 
     <properties>
