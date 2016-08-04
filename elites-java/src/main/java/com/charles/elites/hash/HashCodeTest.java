@@ -1,5 +1,7 @@
 package com.charles.elites.hash;
 
+import com.charles.elites.objects.Student;
+import com.charles.elites.objects.Teacher;
 import com.google.common.collect.Sets;
 
 import java.util.Set;

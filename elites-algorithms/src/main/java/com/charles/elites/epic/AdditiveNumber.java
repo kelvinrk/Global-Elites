@@ -2,10 +2,11 @@ package com.charles.elites.epic;
 
 public class AdditiveNumber {
 	public static void main(String[] args) {
-		for (int i = 1000; i < 10000; i++)
-			if (isAdditiveNumber(String.valueOf(i)))
-				System.out.println(i);
-
+//		for (int i = 1000; i < 10000; i++)
+//			if (isAdditiveNumber(String.valueOf(i)))
+//				System.out.println(i);
+		int[] a = {2,3,4,5,6,7,8,9,10,11,12,14,15};
+		System.out.println(findMissing(a));
 	}
 	public static boolean isAdditiveNumber(String nums) {
 		int len = nums.length();
@@ -36,5 +37,27 @@ public class AdditiveNumber {
 			}
 		}
 		return false;
+	}
+
+	private static Integer findMissing(int[] nums) {
+		if(nums == null || nums.length < 2)
+			return -1;
+		int left = 0;
+		int right = nums.length - 1;
+		while(left < right) {
+			int mid = (left + right) / 2;
+			int diffLen = right - mid;
+			int diff = nums[right] - nums[mid];
+
+			if(diff > diffLen) {
+				left = mid + 1;
+			} else {
+				right = mid;
+			}
+		}
+
+		if(left > 0)
+			return nums[right] - 1;
+		return -1;
 	}
 }
