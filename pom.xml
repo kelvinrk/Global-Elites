@@ -11,6 +11,8 @@
         <module>elites-gson</module>
         <module>elites-algorithms</module>
         <module>elites-java</module>
+        <module>elites-utils</module>
+        <module>elites-ood</module>
     </modules>
 
     <properties>
@@ -26,6 +28,7 @@
         <joda-time.version>2.3</joda-time.version>
         <junit.version>3.8.1</junit.version>
         <stringtemplate.version>4.0.2</stringtemplate.version>
+        <org.reflections.version>0.9.9-RC2</org.reflections.version>
 
         <commons.lang.version>2.6</commons.lang.version>
         <commons.lang3.version>3.3</commons.lang3.version>
@@ -170,6 +173,11 @@
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>${commons.httpclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections-maven</artifactId>
+            <version>${org.reflections.version}</version>
         </dependency>
     </dependencies>
 

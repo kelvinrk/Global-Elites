@@ -38,15 +38,15 @@ public class Worker {
          * immediately. Join does not terminate Thread 2, just progress of the
          * code stops until Threads terminate.
          */
-//        try {
-//            thread1.join();
-//            thread2.join();
-//        } catch (InterruptedException ignored) {}
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException ignored) {}
         System.out.println("Count is: " + count);
     }
 
     public void increment() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             try {
                 increment(Thread.currentThread().getName());
             } catch (InterruptedException ex) {
@@ -63,7 +63,7 @@ public class Worker {
     public synchronized void increment(String threadName) throws InterruptedException {
 //    public void increment(String threadName) throws InterruptedException {
         count++;
-        //Thread.sleep(1000);
+//        Thread.sleep(10);
         System.out.println("Thread in Progress: " + threadName + " and count is: " + count);
     }
 }

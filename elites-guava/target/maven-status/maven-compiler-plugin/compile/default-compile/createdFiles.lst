@@ -1,1 +1,14 @@
-com\charles\elites\App.class
+com\charles\elites\collections\SetsHelperTest.class
+com\charles\elites\collections\TableTest.class
+com\charles\elites\collections\ClassToInstanceMapTest.class
+com\charles\elites\objects\FlowType.class
+com\charles\elites\basics\Employee.class
+com\charles\elites\collections\RangeSetTest.class
+com\charles\elites\collections\BiMapTest.class
+com\charles\elites\basics\TestComparisonChain.class
+com\charles\elites\collections\ListsTest.class
+com\charles\elites\objects\Stock.class
+com\charles\elites\collections\MultisetTest.class
+com\charles\elites\collections\MultimapTest.class
+com\charles\elites\collections\RangeMapTest.class
+com\charles\elites\collections\ImmutableTest.class
