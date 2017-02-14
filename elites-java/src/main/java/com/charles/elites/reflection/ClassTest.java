@@ -26,7 +26,7 @@ public class ClassTest {
         System.out.println("clazz.getPackage() " + clazz.getPackage());
 
         Set<Field> allFields = ReflectionUtils.getAllFields(clazz,
-                ReflectionUtils.withModifier(Modifier.PRIVATE));
+        ReflectionUtils.withModifier(Modifier.PRIVATE));
 
         for(Field field : allFields)
             System.out.println(field.getName());
